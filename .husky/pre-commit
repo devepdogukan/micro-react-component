@@ -1,6 +1,5 @@
 pnpm test
 
-# Eğer testler başarılıysa, Commitizen'i başlatın
 if [ $? -eq 0 ]; then
   exec < /dev/tty && pnpm run format && pnpm run commit
 else

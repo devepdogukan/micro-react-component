@@ -3,20 +3,28 @@
 ## Description
 `micro-react-component` is a project designed to create modular React components based on a micro frontend architecture. This project allows different parts of applications to come together to form a flexible and scalable structure.
 
+[![NPM](https://img.shields.io/npm/v/micro-react-component)](https://www.npmjs.com/package/micro-react-component) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/devepdogukan/micro-react-component)
 
 ## Features
 - Modular structure: Components can be developed and deployed independently.
 - React-based: Optimized for modern React applications.
 - Micro Frontend compatible: Enables collaboration between different teams and projects.
+- **Tailwind CSS support**: Tailwind CSS is used to style user interface components.
+- **TypeScript support**: The project is written in TypeScript, providing type safety and an improved development experience.
+- **Testing environment**: The project is tested using Jest, ensuring the accuracy and reliability of components.
 
 ## Installation
 To run the project in your local environment, follow the steps below:
 
-1. Clone this repository:
+1. Clone this repository (git or npm):
    ```bash
    git clone https://github.com/devepdogukan/micro-react-component.git
    ```
-   
+
+   ```bash
+   npm i micro-react-component
+   ```    
+
 2. Navigate to the project directory:
    ```bash
    cd micro-react-component

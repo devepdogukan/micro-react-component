@@ -1,0 +1,9 @@
+pnpm test
+
+# Eğer testler başarılıysa, Commitizen'i başlatın
+if [ $? -eq 0 ]; then
+  exec < /dev/tty && pnpm run format && pnpm run commit
+else
+  echo "Testler başarısız oldu. Commit işlemi iptal edildi."
+  exit 1
+fi

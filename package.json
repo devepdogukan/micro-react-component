@@ -22,9 +22,14 @@
     "build": "webpack --config webpack.config.js",
     "lint": "eslint src",
     "format": "prettier --write src",
-    "commit": "cz commit",
     "test": "jest",
+    "commit": "git-cz",
     "prepare": "husky"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
@@ -43,6 +48,7 @@
     "babel-loader": "^9.2.1",
     "commitizen": "^4.3.1",
     "css-loader": "^7.1.2",
+    "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^7.2.1",
     "eslint": "^9.13.0",
     "eslint-config-prettier": "^9.1.0",

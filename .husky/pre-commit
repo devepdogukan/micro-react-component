@@ -1,8 +1,14 @@
 pnpm test
-
-if [ $? -eq 0 ]; then
-  exec < /dev/tty && pnpm run format && pnpm run commit
-else
+if [ $? -ne 0 ]; then
   echo "Tests failed. Commit operation aborted."
   exit 1
 fi
+
+pnpm run lint
+if [ $? -ne 0 ]; then
+  echo "Eslint failed. Commit operation aborted."
+  exit 1
+fi
+pnpm format
+
+pnpm commit

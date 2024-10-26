@@ -23,7 +23,7 @@
     "lint": "eslint src",
     "format": "prettier --write src",
     "test": "jest",
-    "commit": "git-cz",
+    "commit": "cz",
     "prepare": "husky"
   },
   "config": {

@@ -16,14 +16,10 @@
 ## Installation
 To run the project in your local environment, follow the steps below:
 
-1. Clone this repository (git or npm):
+1. Clone this repository:
    ```bash
    git clone https://github.com/devepdogukan/micro-react-component.git
    ```
-
-   ```bash
-   npm i micro-react-component
-   ```    
 
 2. Navigate to the project directory:
    ```bash
